@@ -1,0 +1,131 @@
+.wrapper {
+    padding-left: 10px;
+    padding-right: 2px;
+    margin-left: 5px;
+}
+
+.left-menu {
+    background-color: #3d5598;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    min-height: 100%;
+    position: fixed;
+    float: left;
+    transition: all .2s ease-in;
+}
+
+.sidebar-nav {
+    list-style: none;
+    display: block;
+    position: absolute;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+    text-indent: 10px;
+    transition: all .2s ease-in;
+    position: relative;
+}
+
+.sidebar-nav li::before {
+    content: ' ';
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 5px;
+    position: absolute;
+    background-color: #00b3ee;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+}
+
+.sidebar-nav li:hover:before {
+    width: 100%;
+    -webkit-transition: width 0.2s ease-out;
+    -moz-transition: width 0.2s ease-out;
+    transition: width 0.2s ease-out;
+    color: black;
+    z-index: -1;
+}
+
+.sidebar-nav li:nth-child(2):before {
+    background-color: antiquewhite !important;
+}
+
+.sidebar-nav li:nth-child(3):before {
+    background-color: red !important;
+}
+
+.sidebar-nav li a {
+    text-decoration: none;
+    color: #b1b9b1;
+    transition: all .2s ease-in;
+    z-index: 1;
+}
+
+
+/*.sidebar-nav li:hover {
+    background-color: whitesmoke;
+    transition: all .2s ease-in;
+}*/
+
+.content {
+    margin-left: 165px;
+    position: relative;
+    right: 0;
+    transition: all .2s ease-in;
+}
+
+.side-toggle {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    transition: all .2s ease-in;
+    border: none;
+    background: transparent;
+    position: sticky;
+    display: block;
+}
+
+.side-toggle:hover {
+    outline: none;
+}
+
+.side-toggle:focus {
+    outline: none;
+}
+
+.side-toggle:active {
+    outline: none;
+}
+
+.toggle-top,
+.toggle-middle,
+.toggle-bottom {
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    background-color: #ccc;
+}
+
+.toggle-top {
+    top: 4px;
+}
+
+.toggle-middle {
+    margin-top: -2px;
+}
+
+.toggle-bottom {
+    bottom: 5px;
+}
+
+.toggle-top:hover {
+    top: 2px;
+}
