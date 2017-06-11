@@ -11,7 +11,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:sdk": "./node_modules/.bin/lb-sdk server/server.js client/app/shared/sdk -d ng2web -i enabled"
   },
   "dependencies": {
     "@angular/common": "^4.0.0",
@@ -31,6 +32,7 @@
     "loopback": "^3.0.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^4.0.0",
+    "loopback-connector-mongodb": "^3.1.0",
     "rxjs": "^5.1.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^1.0.1",
@@ -39,6 +41,7 @@
   "devDependencies": {
     "@angular/cli": "1.0.0",
     "@angular/compiler-cli": "^4.0.0",
+    "@mean-expert/loopback-sdk-builder": "^2.1.0-rc.10.5",
     "@types/bootstrap": "^3.3.33",
     "@types/jasmine": "2.5.38",
     "@types/jquery": "^2.0.46",

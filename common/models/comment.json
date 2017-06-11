@@ -1,0 +1,37 @@
+{
+    "name": "comment",
+    "plural": "comments",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "email": {
+            "type": "string",
+            "required": true
+        },
+        "message": {
+            "type": "string",
+            "required": true
+        },
+        "comment_date": {
+            "type": "date",
+            "required": true
+        }
+    },
+    "validations": [],
+    "relations": {
+        "blogs": {
+            "type": "belongsTo",
+            "model": "blog",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

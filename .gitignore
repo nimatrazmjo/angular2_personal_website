@@ -16,4 +16,5 @@
 .strong-pm
 coverage
 node_modules
+client/app/shared/sdk
 npm-debug.log

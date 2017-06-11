@@ -1,17 +1,5 @@
 <div class="wrapper">
-    <aside class="left-menu">
-        <div class="logo">
-            Company logo
-        </div>
-        <nav>
-            <ul class="nav sidebar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">CV</a></li>
-            </ul>
-        </nav>
-    </aside>
+    <app-sidebar></app-sidebar>
     <section class="content">
         <div class="well">
             <button type="button" class="side-toggle">
@@ -23,6 +11,7 @@
             <div class="page-header">
                 <h1>Nimatullah Razmjo</h1>
             </div>
+            <router-outlet></router-outlet>
         </div>
     </section>
 </div>
