@@ -1,0 +1,49 @@
+{
+  "name": "resume",
+  "plural": "resumes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "number",
+      "required": true
+    },
+    "website": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "locations"
+    },
+    "profile": {
+      "type": [
+        "profiles"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,37 +1,26 @@
 {
-  "name": "comment",
-  "plural": "comments",
+  "name": "profiles",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "network": {
       "type": "string",
       "required": true
     },
-    "email": {
+    "username": {
       "type": "string",
       "required": true
     },
-    "message": {
+    "url": {
       "type": "string",
-      "required": true
-    },
-    "comment_date": {
-      "type": "date",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "blogs": {
-      "type": "belongsTo",
-      "model": "blog",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

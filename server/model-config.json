@@ -54,5 +54,17 @@
   "comment": {
     "dataSource": "mongoose",
     "public": true
+  },
+  "resume": {
+    "dataSource": "mongoose",
+    "public": true
+  },
+  "locations": {
+    "dataSource": "mongoose",
+    "public": false
+  },
+  "profiles": {
+    "dataSource": "mongoose",
+    "public": false
   }
 }
