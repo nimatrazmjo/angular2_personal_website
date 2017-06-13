@@ -1,52 +1,45 @@
 {
-  "name": "resume",
-  "plural": "resumes",
+  "name": "experience",
+  "plural": "experiences",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "label": {
-      "type": "string",
-      "required": true
-    },
-    "picture": {
+    "company": {
       "type": "string"
     },
-    "email": {
+    "position": {
       "type": "string",
-      "required": true
-    },
-    "phone": {
-      "type": "number",
       "required": true
     },
     "website": {
       "type": "string"
     },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
     "summary": {
       "type": "string",
       "required": true
     },
-    "location": {
-      "type": "locations"
-    },
-    "profile": {
+    "heighlight": {
       "type": [
-        "profiles"
+        "string"
       ]
     }
   },
   "validations": [],
   "relations": {
-    "experiences": {
-      "type": "hasMany",
-      "model": "experience",
+    "resume": {
+      "type": "belongsTo",
+      "model": "resume",
       "foreignKey": ""
     }
   },

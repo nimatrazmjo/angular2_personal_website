@@ -66,5 +66,9 @@
   "profiles": {
     "dataSource": "mongoose",
     "public": false
+  },
+  "experience": {
+    "dataSource": "mongoose",
+    "public": true
   }
 }
