@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    'template': '<p>Blog is working</p>'
+    'templateUrl': './blog.component.html',
+    'styleUrls': ['./blog.component.css'] 
 })
 export class BlogComponent implements OnInit {
 
