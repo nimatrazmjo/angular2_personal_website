@@ -1,0 +1,37 @@
+{
+  "name": "reference",
+  "plural": "references",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "reference": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "resume": {
+      "type": "belongsTo",
+      "model": "resume",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

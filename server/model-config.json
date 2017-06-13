@@ -70,5 +70,21 @@
   "experience": {
     "dataSource": "mongoose",
     "public": true
+  },
+  "education": {
+    "dataSource": "mongoose",
+    "public": true
+  },
+  "skill": {
+    "dataSource": "mongoose",
+    "public": true
+  },
+  "language": {
+    "dataSource": "mongoose",
+    "public": true
+  },
+  "reference": {
+    "dataSource": "mongoose",
+    "public": true
   }
 }

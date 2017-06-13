@@ -48,6 +48,26 @@
       "type": "hasMany",
       "model": "experience",
       "foreignKey": ""
+    },
+    "education": {
+      "type": "hasMany",
+      "model": "education",
+      "foreignKey": ""
+    },
+    "skills": {
+      "type": "hasMany",
+      "model": "skill",
+      "foreignKey": ""
+    },
+    "languages": {
+      "type": "hasMany",
+      "model": "language",
+      "foreignKey": ""
+    },
+    "references": {
+      "type": "hasMany",
+      "model": "reference",
+      "foreignKey": ""
     }
   },
   "acls": [],

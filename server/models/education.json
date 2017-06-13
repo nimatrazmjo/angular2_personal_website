@@ -1,0 +1,49 @@
+{
+  "name": "education",
+  "plural": "educations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "institution": {
+      "type": "string",
+      "required": true
+    },
+    "area": {
+      "type": "string",
+      "required": true
+    },
+    "studyType": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "string",
+      "required": true
+    },
+    "endDate": {
+      "type": "string",
+      "required": true
+    },
+    "gpa": {
+      "type": "string"
+    },
+    "courses": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "resume": {
+      "type": "belongsTo",
+      "model": "resume",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

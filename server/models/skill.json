@@ -1,0 +1,38 @@
+{
+  "name": "skill",
+  "plural": "skills",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "level": {
+      "type": "string",
+      "required": true
+    },
+    "keywords": {
+      "type": "string",
+      "required": true
+    },
+    "keywordss": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "resume": {
+      "type": "belongsTo",
+      "model": "resume",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "language",
+  "plural": "languages",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "level": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "resume": {
+      "type": "belongsTo",
+      "model": "resume",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
