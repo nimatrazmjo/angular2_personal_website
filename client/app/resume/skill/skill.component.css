@@ -1,0 +1,33 @@
+.name {
+    float: left;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: underline
+}
+
+.level {
+    background: #0085ff;
+    border-radius: 10px;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.keywords {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.keyword {
+    background: #32475c;
+    border-radius: 10px;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 0.75em;
+}

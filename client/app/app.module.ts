@@ -8,6 +8,11 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './sidebar/sidebar.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ExperienceComponent } from './resume/experience/experience.component';
+import { EducationComponent } from './resume/education/education.component';
+import { SkillComponent } from './resume/skill/skill.component';
+import { LanguageComponent } from './resume/language/language.component';
 import { routes } from './routing';
 
 @NgModule({
@@ -15,7 +20,12 @@ import { routes } from './routing';
     AppComponent,
     BlogComponent,
     SideBarComponent,
-    HomeComponent
+    HomeComponent,
+    ResumeComponent,
+    ExperienceComponent,
+    EducationComponent,
+    SkillComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,

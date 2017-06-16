@@ -1,0 +1,50 @@
+.education {
+    position: relative;
+    padding-left: 20px;
+}
+
+.sub-title {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: inherit
+}
+
+.studyType {
+    font-size: 0.70em;
+    font-style: italic;
+}
+
+.education::before {
+    content: ' ';
+    height: 100%;
+    left: 25px;
+    top: 0;
+    width: 5px;
+    position: absolute;
+    background: #0085ff;
+    background: -webkit-linear-gradient(left top, #0085ff, #cccccc);
+    background: -o-linear-gradient(bottom right, #0085ff, #cccccc);
+    background: -moz-linear-gradient(bottom right, #0085ff, #cccccc);
+    background: linear-gradient(to bottom right, #0085ff, #cccccc);
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    z-index: -1;
+}
+
+.duration {
+    width: 13%;
+    margin-left: -10px;
+    background-color: #ffffff;
+    position: relative;
+    float: left;
+    font-size: 0.7em;
+    z-index: 1;
+}
+
+.sub-title,
+.studyType,
+.faculty,
+.courses {
+    padding-left: 25px;
+}
