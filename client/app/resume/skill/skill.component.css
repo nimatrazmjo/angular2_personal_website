@@ -17,6 +17,7 @@
 .keywords {
     display: inline-block;
     padding-top: 10px;
+    width: 100%;
 }
 
 .keyword {

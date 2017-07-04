@@ -10,3 +10,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.75em
 }
+
+.responsibality {
+    font-weight: bold;
+    font-family: serif;
+    font-size: 0.90em;
+}
+
+.duration {
+    padding: 15px;
+    font-weight: bold;
+}

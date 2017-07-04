@@ -13,6 +13,7 @@ import { ExperienceComponent } from './resume/experience/experience.component';
 import { EducationComponent } from './resume/education/education.component';
 import { SkillComponent } from './resume/skill/skill.component';
 import { LanguageComponent } from './resume/language/language.component';
+import { ReferenceComponent } from './resume/reference/reference.component';
 import { routes } from './routing';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { routes } from './routing';
     ExperienceComponent,
     EducationComponent,
     SkillComponent,
-    LanguageComponent
+    LanguageComponent,
+    ReferenceComponent
   ],
   imports: [
     BrowserModule,
