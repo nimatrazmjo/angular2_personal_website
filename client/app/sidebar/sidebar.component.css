@@ -52,7 +52,7 @@
 }
 
 .sidebar-nav li:nth-child(3):before {
-    background-color: red !important;
+    background-color: #d9d9d9 !important;
 }
 
 .sidebar-nav li a {
