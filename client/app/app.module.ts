@@ -6,34 +6,25 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SideBarComponent } from './sidebar/sidebar.component';
-import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
-import { ResumeComponent } from './resume/resume.component';
-import { ExperienceComponent } from './resume/experience/experience.component';
-import { EducationComponent } from './resume/education/education.component';
-import { SkillComponent } from './resume/skill/skill.component';
-import { LanguageComponent } from './resume/language/language.component';
-import { ReferenceComponent } from './resume/reference/reference.component';
 import { routes } from './routing';
+
+import { BlogModule } from './blog/blog.module';
+import { ResumeModule } from './resume/resume.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlogComponent,
     SideBarComponent,
     HomeComponent,
-    ResumeComponent,
-    ExperienceComponent,
-    EducationComponent,
-    SkillComponent,
-    LanguageComponent,
-    ReferenceComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BlogModule,
+    ResumeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

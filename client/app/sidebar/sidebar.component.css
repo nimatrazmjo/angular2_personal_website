@@ -62,6 +62,14 @@
     z-index: 1;
 }
 
+.sidebar-nav li:focus {
+    outline: none;
+}
+
+.sidebar-nav li:focus {
+    outline: none;
+}
+
 
 /*.sidebar-nav li:hover {
     background-color: whitesmoke;
