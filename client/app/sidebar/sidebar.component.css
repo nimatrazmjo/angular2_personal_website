@@ -70,6 +70,13 @@
     outline: none;
 }
 
+.logo {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+    background: white;
+}
+
 
 /*.sidebar-nav li:hover {
     background-color: whitesmoke;
