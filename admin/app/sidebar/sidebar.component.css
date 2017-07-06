@@ -1,0 +1,84 @@
+.left-menu {
+    background-color: #3d5598;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    min-height: 100%;
+    position: fixed;
+    float: left;
+    transition: all .2s ease-in;
+}
+
+.sidebar-nav {
+    list-style: none;
+    display: block;
+    position: absolute;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+    text-indent: 10px;
+    transition: all .2s ease-in;
+    position: relative;
+}
+
+.sidebar-nav li::before {
+    content: ' ';
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 5px;
+    position: absolute;
+    background-color: #00b3ee;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+}
+
+.sidebar-nav li:hover:before {
+    width: 100%;
+    -webkit-transition: width 0.2s ease-out;
+    -moz-transition: width 0.2s ease-out;
+    transition: width 0.2s ease-out;
+    color: black;
+    z-index: -1;
+}
+
+.sidebar-nav li:nth-child(2):before {
+    background-color: antiquewhite !important;
+}
+
+.sidebar-nav li:nth-child(3):before {
+    background-color: #d9d9d9 !important;
+}
+
+.sidebar-nav li a {
+    text-decoration: none;
+    color: #b1b9b1;
+    transition: all .2s ease-in;
+    z-index: 1;
+}
+
+.sidebar-nav li:focus {
+    outline: none;
+}
+
+.sidebar-nav li:focus {
+    outline: none;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+    background: white;
+}
+
+
+/*.sidebar-nav li:hover {
+    background-color: whitesmoke;
+    transition: all .2s ease-in;
+}*/

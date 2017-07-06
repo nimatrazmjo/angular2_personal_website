@@ -1,0 +1,23 @@
+.company-name {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.work-date {
+    text-align: right;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75em
+}
+
+.responsibality {
+    font-weight: bold;
+    font-family: serif;
+    font-size: 0.90em;
+}
+
+.duration {
+    padding: 15px;
+    font-weight: bold;
+}

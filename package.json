@@ -7,12 +7,13 @@
         "server": "nodemon .",
         "posttest": "npm run lint && nsp check",
         "ng": "ng",
-        "start": "ng serve",
+        "client": "ng serve --app 0 --port 4201",
+        "admin": "ng server --app 1 --port 4202",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "build:sdk": "./node_modules/.bin/lb-sdk server/server.js client/app/shared/sdk -d ng2web -i enabled"
+        "build:sdk": "./node_modules/.bin/lb-sdk server/server.js sdk -d ng2web -i enabled"
     },
     "dependencies": {
         "@angular/common": "^4.0.0",
