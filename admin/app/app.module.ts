@@ -18,7 +18,7 @@ import { ResumeModule } from './resume/resume.module';
     AppComponent,
     SideBarComponent,
     HomeComponent,
-    ContactComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +28,7 @@ import { ResumeModule } from './resume/resume.module';
     BlogModule,
     ResumeModule,
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

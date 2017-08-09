@@ -25,4 +25,5 @@
 .menu li:hover {
     background-color: #9c9c9c;
     transition: .5s ease-in-out;
+    cursor: pointer
 }
