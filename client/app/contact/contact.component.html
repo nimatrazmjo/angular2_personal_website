@@ -1,1 +1,29 @@
-<p> Contact is working </p>
+<form [formGroup]="contactForm" class="form form-horizontal">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="fullname" class="form-control-label">Full Name: </label>
+                <input type="text" formControlName="fullname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-control-label">Email: </label>
+                <input type="text" formControlName="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-control-label">Subject: </label>
+                <input type="text" formControlName="subject" id="subject" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p class="note"> Please do not contact in case if you have any question. Stackoverflow is the place for asking technical question. Also please do not offer me a job because I already have a job, and I am happy with it <b> Thank you for your understanding</b></p>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="message" class="form-control-label">Message: </label>
+        <textarea class="form-control" formControlName="message" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="submit" [disabled]="contactForm.invalid" value="Send" class="btn btn-success">
+    </div>
+</form>

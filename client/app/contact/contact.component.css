@@ -1,0 +1,14 @@
+.note {
+    padding-top: 36px;
+    color: #ccc;
+    font-style: italic;
+}
+
+b {
+    display: block;
+}
+
+.required {
+    border: 1px solid red;
+    background: #fffafa;
+}
