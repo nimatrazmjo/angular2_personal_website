@@ -9,6 +9,8 @@ import { SideBarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { routes } from './routing';
+import { SDKBrowserModule } from '../../sdk/index';
+
 
 import { BlogModule } from './blog/blog.module';
 import { ResumeModule } from './resume/resume.module';
@@ -25,6 +27,7 @@ import { ResumeModule } from './resume/resume.module';
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes),
+    SDKBrowserModule.forRoot(),
     BlogModule,
     ResumeModule,
   ],

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { UserApi } from './../../../sdk/services/custom/User';
 @Component({
@@ -13,7 +14,8 @@ export class LoginComponent implements OnInit {
   loginStatus: boolean = true;
   constructor(
     private fb: FormBuilder,
-    private user: UserApi
+    private user: UserApi,
+    private router: Router
   ) { }
 
   saveForm() {
@@ -21,10 +23,12 @@ export class LoginComponent implements OnInit {
       
        this.user.login({ email: this.Forms.value.email, password: this.Forms.value.password}, 'User', true)
        .subscribe(response => {
-          // return to home page
+          console.log('success response');
+          this.router.navigate(['/home']);
        },
        error => {
-          this.loginStatus = false
+         console.log('Failed response');
+         this.loginStatus = false;
        }
        );
     }
